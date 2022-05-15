@@ -5,7 +5,7 @@
 $.ajaxPrefilter(function(options) {
     // 在发起 Ajax 请求之前， 统一拼接请求的根路径
     options.url = 'http://www.liulongbin.top:3007' + options.url
-    console.log(options.url)
+        // console.log(options.url)
 
     // 统一为有权限的接口， 设置 headers 请求头
     if (options.url.indexOf('/my/') !== -1) {
